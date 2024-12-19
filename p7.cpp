@@ -10,6 +10,7 @@ int main(int argc, char **argv)
     int world_size, world_rank;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
+    
     int n = 10;
     vector<int> local_array(n);
     int local_sum = 0, total_sum = 0;
