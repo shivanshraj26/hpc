@@ -12,7 +12,7 @@ int main()
     vector<int> x(n), y_serial(n, 0), y_parallel(n, 0);
 
     cout << "Enter matrix A :\n";
-    for (auto &row : A)
+    for (int &row : A)
     {
         for (int &a : row)
         {
